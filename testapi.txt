@@ -1,0 +1,75 @@
+2. Tạo kỳ thực tập
+POST /api/Khoa/CreateKiThucTap
+
+{
+  "tenKiThucTap": "Ky thuc tap test API",
+  "idKhoa": 1
+}
+
+
+3. Thêm đơn vị hướng dẫn
+POST /api/Khoa/ThemDVHDThucTap
+
+[
+  {
+    "idKiThucTap": 1001,
+    "tenDonViHD": "Cong ty Test API",
+    "gmailDonViHD": "hr@testapi.vn"
+  }
+]
+
+
+4,excel
+
+
+5. Phân công giảng viên
+POST /api/Khoa/PhanCongGVHD
+
+{
+  "idKiThucTap": 1001,
+  "mssv": "22010001",
+  "maSoGiangVien": "GV001"
+}
+
+
+
+6. Chấm điểm GVHD
+POST /api/DanhGiaThucTap/ChamDiem
+
+{
+  "mssv": "22010001",
+  "chang": 1,
+  "nguoiChamLoai": "GVHD",
+  "nguoiChamId": "GV001",
+  "diemClo": [
+    { "maClo": "CLO1", "diem": 8 },
+    { "maClo": "CLO2", "diem": 7.5 },
+    { "maClo": "CLO3", "diem": 8 },
+    { "maClo": "CLO4", "diem": 7 },
+    { "maClo": "CLO5", "diem": 8 },
+    { "maClo": "CLO6", "diem": 7.5 },
+    { "maClo": "CLO7", "diem": 8 }
+  ]
+}
+
+
+
+7. Chấm điểm ĐVHD
+
+
+{
+  "mssv": "22010001",
+  "chang": 1,
+  "nguoiChamLoai": "DVHD",
+  "nguoiChamId": "501",
+  "diemClo": [
+    { "maClo": "CLO1", "diem": 8 },
+    { "maClo": "CLO2", "diem": 8 },
+    { "maClo": "CLO3", "diem": 7 },
+    { "maClo": "CLO4", "diem": 8.5 },
+    { "maClo": "CLO5", "diem": 8 },
+    { "maClo": "CLO6", "diem": 7.5 },
+    { "maClo": "CLO7", "diem": 8 }
+  ]
+}
+
