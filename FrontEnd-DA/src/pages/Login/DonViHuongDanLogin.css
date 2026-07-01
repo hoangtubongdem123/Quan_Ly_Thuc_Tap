@@ -1,0 +1,289 @@
+.dvhd-login-page {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: minmax(390px, 0.76fr) minmax(0, 1fr);
+  background: #edf4f1;
+  color: #17231f;
+}
+
+.dvhd-panel {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+  padding: 48px clamp(22px, 4vw, 58px);
+  background: #ffffff;
+  box-shadow: 18px 0 44px rgba(23, 35, 31, 0.08);
+  z-index: 1;
+}
+
+.dvhd-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dvhd-mark {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: #247a55;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.dvhd-eyebrow {
+  margin: 0;
+  color: #247a55;
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.dvhd-heading h1 {
+  margin: 3px 0 0;
+  color: #17231f;
+  font-size: clamp(27px, 3.8vw, 36px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.dvhd-copy {
+  margin: 0;
+  max-width: 520px;
+  color: #60726b;
+}
+
+.dvhd-login-form {
+  display: grid;
+  gap: 16px;
+}
+
+.dvhd-field {
+  display: grid;
+  gap: 7px;
+  color: #33443e;
+  font-size: 14px;
+  font-weight: 760;
+  text-align: left;
+}
+
+.dvhd-field input {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid #c8d8d1;
+  border-radius: 8px;
+  padding: 0 12px;
+  background: #fbfdfc;
+  color: #17231f;
+  font: inherit;
+}
+
+.dvhd-field input:focus {
+  outline: 3px solid rgba(36, 122, 85, 0.18);
+  border-color: #247a55;
+}
+
+.dvhd-password-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  border: 1px solid #c8d8d1;
+  border-radius: 8px;
+  background: #fbfdfc;
+}
+
+.dvhd-password-field:focus-within {
+  outline: 3px solid rgba(36, 122, 85, 0.18);
+  border-color: #247a55;
+}
+
+.dvhd-password-field input {
+  border: 0;
+  background: transparent;
+}
+
+.dvhd-password-field input:focus {
+  outline: 0;
+}
+
+.dvhd-password-field button {
+  min-width: 58px;
+  border: 0;
+  border-left: 1px solid #d9e5df;
+  border-radius: 0 8px 8px 0;
+  background: #f1f8f5;
+  color: #247a55;
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.dvhd-primary-button,
+.dvhd-secondary-button {
+  min-height: 46px;
+  border-radius: 8px;
+  padding: 0 16px;
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.dvhd-primary-button {
+  border: 0;
+  background: #247a55;
+  color: #ffffff;
+}
+
+.dvhd-secondary-button {
+  border: 1px solid #cde1d7;
+  background: #ffffff;
+  color: #247a55;
+}
+
+.dvhd-primary-button:hover,
+.dvhd-secondary-button:hover {
+  filter: brightness(0.97);
+}
+
+.dvhd-primary-button:disabled,
+.dvhd-secondary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.dvhd-session {
+  display: grid;
+  gap: 14px;
+  border: 1px solid #d6e8de;
+  border-radius: 8px;
+  padding: 16px;
+  background: #f4fbf7;
+  text-align: left;
+}
+
+.dvhd-session span,
+.dvhd-session strong,
+.dvhd-session em {
+  display: block;
+}
+
+.dvhd-session span,
+.dvhd-session em {
+  color: #60726b;
+  font-size: 13px;
+  font-style: normal;
+}
+
+.dvhd-session strong {
+  margin-top: 3px;
+  color: #17231f;
+}
+
+.dvhd-notice {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 11px 13px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.dvhd-notice.success {
+  background: #e8f6ef;
+  color: #247a55;
+}
+
+.dvhd-notice.error {
+  background: #fff0ed;
+  color: #b44739;
+}
+
+.dvhd-aside {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 48px clamp(30px, 7vw, 98px);
+  background:
+    linear-gradient(128deg, rgba(24, 45, 37, 0.9), rgba(36, 122, 85, 0.68)),
+    url('../../assets/hero.png') center / cover;
+  color: #ffffff;
+}
+
+.dvhd-aside-content {
+  max-width: 700px;
+}
+
+.dvhd-aside .dvhd-eyebrow {
+  color: #f4c15a;
+}
+
+.dvhd-aside h2 {
+  margin: 12px 0 30px;
+  color: #ffffff;
+  font-size: clamp(38px, 5.8vw, 70px);
+  line-height: 1.03;
+  letter-spacing: 0;
+}
+
+.dvhd-feature-list {
+  display: grid;
+  gap: 12px;
+}
+
+.dvhd-feature-list div {
+  min-height: 76px;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dvhd-feature-list strong {
+  color: #f4c15a;
+  font-size: 25px;
+}
+
+.dvhd-feature-list span {
+  color: #eef8f2;
+  font-weight: 760;
+}
+
+@media (max-width: 920px) {
+  .dvhd-login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .dvhd-panel,
+  .dvhd-aside {
+    min-height: auto;
+  }
+
+  .dvhd-aside {
+    padding-block: 44px;
+  }
+}
+
+@media (max-width: 640px) {
+  .dvhd-panel,
+  .dvhd-aside {
+    padding-inline: 18px;
+  }
+
+  .dvhd-heading {
+    align-items: flex-start;
+  }
+
+  .dvhd-feature-list div {
+    grid-template-columns: 1fr;
+  }
+}
